@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SandBox | Input your code and it becomes reality</title>
+</head>
+<body>
+
+    <h1 style=" font-family: Arial; text-decoration: underline; margin: 10px;">Code Center</h1>
+
+    <textarea name="" id="textarea" type="number" cols="50" rows="20" style="background-color: black; color: green;font-size: 20px; border: 8px solid green; float: left;" placeholder="input your code"> </textarea>
+
+ 
+
+
+
+        <p id="p_text" style=" border: 3px solid green; width: auto; height: 470px; margin: 0 auto; overflow: scroll;
+         "></p>
+
+    </button>
+
+    <script>
+    var get = document.querySelector("#textarea");
+        get.addEventListener('keyup', function (event) {
+            var output = document.querySelector("#p_text");
+            output.innerHTML = event.target.value
+            
+        })
+        
+        </script>
+   
+</body>
+</html>
